@@ -1,0 +1,16 @@
+[
+  {
+    "tipo": "SEDAN",
+    "modelos": [
+      {
+        "TipoModelo":"Logan",
+        "sencillo": [],
+        "premium": []
+      }
+    ]
+  },
+  {
+    "tipo": "PICKUP",
+    "modelos": []
+  }
+]

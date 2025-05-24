@@ -1,0 +1,36 @@
+[
+  {
+    "nuevo": true,
+    "añoFabrica": "2025",
+    "cilindraje": "1.6",
+    "potenciaFiscal": "14C",
+    "precioBase": 51990000,
+    "color": "blanco",
+    "Marca": "RENAULT",
+    "Modelo": "Logan",
+    "tipoVehiculo": "Sencillo",
+    "carroceria": "SEDAN",
+    "numeroBastidor": "889_891_37",
+    "ubicacion": "vitrina",
+    "transmision": "mecanico",
+    "traccion": "2 ruedas",
+    "combustible": "gasolina",
+    "eficienciaCombustible": "45 kil/galon",
+    "Basicos": [
+      "camaraReversa"
+    ],
+    "Extras": {
+      "camaraReversa": 500000,
+      "lucesLed": 500000,
+      "direccionAsistida": 500000,
+      "airBags": 500000,
+      "abs": 500000,
+      "sistEntretenimiento": 500000,
+      "sistemaSonidoPremium": 500000,
+      "elevaVidriosElectrico": 500000,
+      "sunRoof": 500000,
+      "rinesLujo": 500000,
+      "aireAcondicionado": 500000
+    }
+  }
+]

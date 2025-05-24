@@ -1,0 +1,58 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Usuario Administrador" as Admin
+
+rectangle "ConcesionarioCRUD" {
+
+    (Agregar concesionario) as Agregar
+    (Buscar concesionario) as Buscar
+    (Editar concesionario) as Editar
+    (Eliminar concesionario) as Eliminar
+    (Listar concesionarios) as Listar
+    (Contar concesionarios) as Contar
+
+    (Cargar datos desde JSON) as Cargar <<include>>
+    (Guardar datos en JSON) as Guardar <<include>>
+
+    package "Opciones de Edición" {
+        (Editar datos generales) as EditarDatos
+        (Gestionar clientes) as GestionClientes
+        (Gestionar oficinas) as GestionOficinas
+        (Gestionar servicios oficiales) as GestionServicios
+        (Gestionar ventas) as GestionVentas
+        (Gestionar vendedores) as GestionVendedores
+        (Gestionar vehículos) as GestionVehiculos
+    }
+
+    Editar --> EditarDatos
+    Editar --> GestionClientes
+    Editar --> GestionOficinas
+    Editar --> GestionServicios
+    Editar --> GestionVentas
+    Editar --> GestionVendedores
+    Editar --> GestionVehiculos
+
+    Agregar --> Cargar
+    Agregar --> Guardar
+
+    Buscar --> Cargar
+    Editar --> Cargar
+    Editar --> Guardar
+
+    Eliminar --> Cargar
+    Eliminar --> Guardar
+
+    Listar --> Cargar
+    Contar --> Cargar
+}
+
+Admin --> Agregar
+Admin --> Buscar
+Admin --> Editar
+Admin --> Eliminar
+Admin --> Listar
+Admin --> Contar
+
+@enduml

@@ -1,0 +1,25 @@
+[
+  {
+    "marca": "RENAULT",
+    "Carroceria": [
+      {
+        "tipo": "SEDAN",
+        "modelos": [
+          {
+            "TipoModelo": "LOGAN",
+            "Sencillo": [],
+            "Premium": []
+          }
+        ]
+      },
+      {
+        "tipo": "COUPE",
+        "modelos": []
+      },
+      {
+        "tipo": "SUV",
+        "modelos": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "nombre": "Mtto de Aires",
+    "nif": "73_198_985",
+    "departamento": "Bolivar",
+    "ciudad": "Cartagena",
+    "direccion": "Condominio Carioca",
+    "telefono": "3022979717",
+    "correo": "gjcm@hotmail.es",
+    "marca": {
+      "marca": "RENAULT",
+      "Modelos": [],
+      "Carroceria": []
+    },
+    "bodega": {
+      "nombre": "Ternera",
+      "ubicacion": "Local",
+      "VehiculosDisponiblesInSitu": []
+    },
+    "numeroBastidor": 0,
+    "listaClientes": [],
+    "oficinas": [],
+    "serviciosOficiales": [],
+    "ventas": [],
+    "vendedores": [],
+    "vehiculos": []
+  },
+  {
+    "nombre": "Bodegon",
+    "nif": "73_198_909",
+    "departamento": "Bolivar",
+    "ciudad": "Cartagena",
+    "direccion": "Flamenco Carioca",
+    "telefono": "3022979717",
+    "correo": "gjcm@hotmail.es",
+    "marca": {
+      "marca": "RENAULT",
+      "Modelos": [],
+      "Carroceria": []
+    },
+    "bodega": {
+      "nombre": "Apto",
+      "ubicacion": "705",
+      "VehiculosDisponiblesInSitu": []
+    },
+    "numeroBastidor": 0,
+    "listaClientes": [],
+    "oficinas": [],
+    "serviciosOficiales": [],
+    "ventas": [],
+    "vendedores": [],
+    "vehiculos": []
+  },
+
+]

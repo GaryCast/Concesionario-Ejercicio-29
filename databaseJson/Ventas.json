@@ -1,0 +1,112 @@
+[
+  {
+    "registroVenta": "",
+    "fechaHora": "May 21, 2025, 4:31:07 PM",
+    "vendedor": {
+      "nombre": "Yuris Tovar",
+      "sexo": "femenino",
+      "edad": "41",
+      "departamento": "Bolivar",
+      "ciudad": "Cartagena",
+      "direccion": "Condominio Ipanema",
+      "telefono": "3043029876",
+      "correo": "cami041002@hotmail.com",
+      "nif": "45549964",
+      "ventasRealizadas": 4,
+      "totalVentas": 3.25E8
+    },
+    "precioVenta": {
+      "id": 0,
+      "vehiculo": {
+        "nuevo": true,
+        "mantenimientos": "no incluido",
+        "añoFabrica": "2025",
+        "cilindraje": "1.6",
+        "potenciaFiscal": "14C",
+        "precioBase": 51990000,
+        "color": "blanco",
+        "tipoVehiculo": "Sencillo",
+        "numeroBastidor": "889_891_37",
+        "ubicacion": "vitrina",
+        "transmision": "mecanico",
+        "traccion": "2 ruedas",
+        "combustible": "gasolina",
+        "eficienciaCombustible": "45 kil/galon",
+        "Basicos": [],
+        "Extras": {
+          "direccionAsistida": 500000,
+          "elevaVidriosElectrico": 500000,
+          "abs": 500000,
+          "airBags": 500000,
+          "sunRoof": 500000,
+          "camaraReversa": 500000,
+          "sistemaSonidoPremium": 500000,
+          "rinesLujo": 500000,
+          "aireAcondicionado": 500000,
+          "sistEntretenimiento": 500000,
+          "lucesLed": 500000
+        }
+      },
+      "precioBase": 5.199E7,
+      "precioExtras": 4900000.0,
+      "descuentosContado": 0.05,
+      "descuentosMixto": 0.025,
+      "precioFinal": 0.0
+    },
+    "metodoPago": {
+      "id": 1,
+      "contado": 1.5E7,
+      "credito": 4.5E7,
+      "tipoDePago": "Mixto"
+    },
+    "descuentos": 0.05,
+    "precioFinal": 6.0E7,
+    "vehiculo": {
+      "nuevo": true,
+      "mantenimientos": "no incluido",
+      "añoFabrica": "2025",
+      "cilindraje": "1.6",
+      "potenciaFiscal": "14C",
+      "precioBase": 51990000,
+      "color": "blanco",
+      "tipoVehiculo": "Sencillo",
+      "numeroBastidor": "889_891_37",
+      "ubicacion": "vitrina",
+      "transmision": "mecanico",
+      "traccion": "2 ruedas",
+      "combustible": "gasolina",
+      "eficienciaCombustible": "45 kil/galon",
+      "Basicos": [],
+      "Extras": {
+        "direccionAsistida": 500000,
+        "elevaVidriosElectrico": 500000,
+        "abs": 500000,
+        "airBags": 500000,
+        "sunRoof": 500000,
+        "camaraReversa": 500000,
+        "sistemaSonidoPremium": 500000,
+        "rinesLujo": 500000,
+        "aireAcondicionado": 500000,
+        "sistEntretenimiento": 500000,
+        "lucesLed": 500000
+      }
+    },
+    "matricula": "GVY 130",
+    "ubicacion": "Bodega",
+    "fechaEntrega": "May 21, 2025, 4:31:07 PM",
+    "cliente": {
+      "nombre": "Juan Perez",
+      "cedula": "123456789",
+      "departamento": "Cundinamarca",
+      "ciudad": "Bogotá",
+      "direccion": "Calle 123 # 45-67",
+      "telefono": "3001234567",
+      "correo": "",
+      "contactoInicial": true,
+      "referidoPor": "",
+      "referidoTel": "",
+      "nivelSatisfaccion": 3,
+      "vehiculosComprados": []
+    }
+  }
+]

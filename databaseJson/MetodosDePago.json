@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "contado": 10000.0,
+    "credito": 0.0,
+    "tipoDePago": "contado"
+  },
+  {
+    "id": 1,
+    "contado": 1000000.0,
+    "credito": 4.5E7,
+    "tipoDePago": "Mixto"
+  },
+  {
+    "id": 2,
+    "contado": 0.0,
+    "credito": 4.5E7,
+    "tipoDePago": "Credito"
+  }
+]

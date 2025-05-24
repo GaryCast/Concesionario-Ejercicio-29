@@ -1,0 +1,221 @@
+@startuml "Proyecto"
+
+skinparam Linetype ortho
+
+'clases
+class Concesionario {
+    nombre: String
+    nif: String
+    departamento: String
+    ciudad: String
+    direccion: String
+    telefono: String
+    correo: String
+    marca: Marca
+    listaClientes: List<Cliente>
+    oficinas: List<Oficina>
+    serviciosOficiales: List<ServicioOficial>
+    bodega: Bodega
+    numeroBastidor: int
+    Concesionario()
+    Concesionario(String nombre, String departamento, String ciudad, String direccion, String nif, String telefono, String correo, Marca marca)
+    getVehiculos(): List<Vehiculo>
+    getVehiculosNuevos(): List<Vehiculo>
+    registrarVehiculo(boolean nuevo, String añoFabrica, String cilindraje, String potenciaFiscal, Integer precioBase, List<Caracteristicas> basico, String color, String numeroBastidor, String ubicacion, String transmision, String traccion, String combustible, String eficienciaCombustible): Vehiculo
+    agregarVehiculo(String nif, String ubicacion, Vehiculo vehiculo)
+    filtrarVehiculos(String busqueda, String valor): List<Vehiculo>
+}
+
+class Oficina {
+    vendedor: Vendedor
+    VehiculosDisponiblesInSitu: List<Vehiculo>
+    Oficina()
+    Oficina(Vendedor vendedor)
+    getVehiculos(): List<Vehiculo>
+}
+
+class ServicioOficial {
+    vendedor: Vendedor
+    VehiculosDisponiblesInSitu: List<Vehiculo>
+    ServicioOficial()
+    ServicioOficial(Vendedor vendedor)
+    getVehiculos(): List<Vehiculo>
+}
+
+class Bodega {
+    nombre: String
+    ubicacion: String
+    VehiculosDisponiblesInSitu: List<Vehiculo>
+    Bodega()
+    Bodega(String nombre, String ubicacion)
+    getVehiculos(): List<Vehiculo>
+}
+
+class Marca {
+    marca: String
+    Modelos: List<String>
+    Carroceria: List<Carroceria>
+    Marca()
+    Marca(String marca)
+}
+
+class Carroceria {
+    tipo: TipoCarroceria
+    tiposdeModelos: List<Modelo>
+    Carroceria()
+    Carroceria(TipoCarroceria tipo)
+}
+
+class Modelo {
+    TipoModelo: String
+    Sencillo: List<Caracteristicas>
+    Premium: List<Caracteristicas>
+    Modelo()
+    Modelo(String tipoModelo)
+}
+
+class Vehiculo {
+    nuevo: boolean
+    mantenimientos: String
+    añoFabrica: String
+    cilindraje: String
+    potenciaFiscal: String
+    precioBase: Integer
+    color: String
+    Marca: String
+    Carroceria: String
+    Modelo: String
+    tipoVehiculo: String
+    numeroBastidor: String
+    ubicacion: String
+    transmision: String
+    traccion: String
+    combustible: String
+    eficienciaCombustible: String
+    Basicos: List<Caracteristicas>
+    Extras: HashMap<Caracteristicas, Integer>
+    Vehiculo(List<Caracteristicas> basico)
+    Vehiculo(boolean nuevo, String añoFabrica, String cilindraje, String potenciaFiscal, Integer precioBase, List<Caracteristicas> basico, String color, String numeroBastidor, String ubicacion, String transmision, String traccion, String combustible, String eficienciaCombustible)
+}
+
+class Vendedor {
+    nombre: String
+    sexo: String
+    edad: String
+    direccion: String
+    telefono: String
+    correo: String
+    nif: String
+    ventasRealizadas: int
+    totalVentas: double
+    Vendedor()
+    Vendedor(String nombre, String sexo, String edad, String direccion, String telefono, String correo, String nif, int ventasRealizadas, double totalVentas)
+}
+
+class Cliente {
+    nombre: String
+    cedula: String
+    departamento: String
+    ciudad: String
+    direccion: String
+    telefono: String
+    correo: String
+    contactoInicial: boolean
+    referidoPor: String
+    referidoTel: String
+    nivelSatisfaccion: Satisfaccion
+    Cliente()
+    Cliente(String nombre, String cedula, String departamento, String ciudad, String direccion, String telefono, String correo, boolean contactoInicial, String referidoPor, String referidoTel, Satisfaccion nivelSatisfaccion)
+}
+
+class Ventas {
+    registroVenta: String
+    fechaHora: Date
+    vendedor: Vendedor
+    precioVenta: PrecioVenta
+    metodoPago: MetodoPago
+    descuentos: Double
+    precioFinal: Double
+    vehiculo: Vehiculo
+    matricula: String
+    ubicacion: String
+    fechaEntrega: Date
+    cliente: Cliente
+    Ventas()
+    Ventas(Date fechaHora, Vendedor vendedor, PrecioVenta precioVenta, MetodoPago metodoPago, Double descuentos, Double precioFinal, Vehiculo vehiculo, String matricula, String ubicacion, Date fechaEntrega, Cliente cliente)
+}
+
+class PrecioVenta {
+    precioBase: Double
+    precioExtras: Double
+    descuentos: Double
+    PrecioVenta()
+    PrecioVenta(Double precioBase, Double precioExtras, Double descuentos)
+}
+
+class MetodoPago {
+    contado: Double
+    credito: Double
+    MetodoPago()
+    MetodoPago(Double contado, Double credito)
+}
+
+enum ListaMarcas {
+    RENAULT
+    NISSAN
+    MAZDA
+    TOYOTA
+}
+
+enum TipoCarroceria {
+    SEDAN
+    COUPE
+    SUV
+    PICKUP
+}
+
+enum Caracteristicas {
+    direccionAsistida
+    airBags
+    abs
+    aireAcondicionado
+    elevaVidriosElectrico
+    sistEntretenimiento
+    sunRoof
+    rinesLujo
+    camaraReversa
+    sistemaSonidoPremium
+    lucesLed
+}
+
+enum Satisfaccion {
+    pesimo
+    bajo
+    medio
+    bueno
+    excelente
+}
+
+'relaciones
+
+Oficina --|> Concesionario
+ServicioOficial --|> Concesionario
+Concesionario "1" -- "*" Marca : distribuye
+Concesionario --> ListaMarcas : maneja una lista de marcas
+Concesionario "1" -- "*" Bodega : puede tener varias bodegas
+Marca "1" -- "*" Carroceria : posee distintos tipos de
+Carroceria "1" -- "*" Modelo : posee distintos tipos de
+Carroceria --> TipoCarroceria : tiene un tipo de carroceria
+Modelo "1" -- "*" Vehiculo : posee distintos tipos de
+Vendedor "1" -- "*" Ventas : puede realizar
+Ventas "1" -- "1" PrecioVenta
+Ventas "1" -- "1" Vehiculo
+Ventas "1" -- "*" MetodoPago : se puede realizar con varios
+Ventas "*" -- "1" Cliente
+Cliente "1" -- "1" Vendedor : solo puede ser atendido
+Cliente "1" -- "*" MetodoPago : puede usar distintos
+Cliente  --> Satisfaccion : tiene un nivel de satisfaccion
+Vehiculo "1" -- "1" Caracteristicas : posee una lista de
+Concesionario "1" -- "*" Cliente : tiene múltiples clientes
+
+@enduml

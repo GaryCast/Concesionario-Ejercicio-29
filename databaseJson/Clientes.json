@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "Gary",
+    "cedula": "73198988",
+    "departamento": "Bolivar",
+    "ciudad": "Cartagena",
+    "direccion": "Ipanema",
+    "telefono": "3022979717",
+    "correo": "gjcm@hotmail.es",
+    "contactoInicial": true,
+    "referidoPor": "Kevin",
+    "referidoTel": "3215970852",
+    "nivelSatisfaccion": 5,
+    "vehiculosComprados": []
+  },
+  {
+    "nombre": "Kevin Gómez",
+    "cedula": "1001973042",
+    "departamento": "Bolivar",
+    "ciudad": "Cartagena",
+    "direccion": "Ipanema",
+    "telefono": "3022979717",
+    "correo": "gjcm@hotmail.es",
+    "contactoInicial": true,
+    "referidoPor": "Kevin",
+    "referidoTel": "3215970852",
+    "nivelSatisfaccion": 5,
+    "vehiculosComprados": []
+  }
+]
