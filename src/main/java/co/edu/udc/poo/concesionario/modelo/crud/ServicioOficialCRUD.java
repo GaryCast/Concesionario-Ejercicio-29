@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.sql.Date;
 import java.util.Scanner;
 
-public class servicioOficialCRUD {
+public class ServicioOficialCRUD {
     public static ArrayList<ServicioOficial> listaServiciosOficiales = new ArrayList<>();
 
     public static void agregar(ServicioOficial servicioOficial)throws Exception{
@@ -410,15 +410,18 @@ public class servicioOficialCRUD {
     public static void guardar() throws Exception{
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(listaServiciosOficiales);
-        Datos.escribirArchivo("databaseJson/ServiciosOficiales.json", json);
+        Datos.escribirArchivo("databaseJson/ServicioOficial.json", json);
     }
     public static void cargarDatos() throws Exception{
         Gson gson = new Gson();
-        FileReader lector = new FileReader("databaseJson/ServiciosOficiales.json");
+        FileReader lector = new FileReader("databaseJson/ServicioOficial.json");
         Type servicioOficialListType = new TypeToken<ArrayList<ServicioOficial>>(){}.getType();
         listaServiciosOficiales = gson.fromJson(lector, ArrayList.class);
     }
     public static Integer contar() throws Exception{
         return listarTodo().size();
+    }
+    public static void main(String[] args) throws Exception{
+        agregar(new ServicioOficial());
     }
 }

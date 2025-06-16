@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import co.edu.udc.poo.concesionario.modelo.crud.ListaMarcaCRUD;
-import co.edu.udc.poo.concesionario.modelo.crud.VehiculoCRUD;
 import co.edu.udc.poo.concesionario.modelo.entidades.*;
+import co.edu.udc.poo.concesionario.vistas.gui.VentanaInicio;
+
+import javax.swing.*;
 
 
 public class Main {
@@ -42,10 +43,13 @@ public class Main {
 
         registrarVehiculo();
         List<Vehiculo> vehiculos = new ArrayList<>();*/
-        VehiculoCRUD crud = new VehiculoCRUD();
+        JOptionPane pane = new JOptionPane(null,JOptionPane.INFORMATION_MESSAGE,JOptionPane.OK_CANCEL_OPTION,null,new String[]{"Aceptar"});
+        VentanaInicio window = new VentanaInicio();
+        window.setVisible(true);
+/*        VehiculoCRUD crud = new VehiculoCRUD();
         Vehiculo encontrado = crud.buscar("889_891_37");
         crud.editar(encontrado);
-        System.out.println(encontrado.ubicacion);
+        System.out.println(encontrado.ubicacion);*/
         
     }
 

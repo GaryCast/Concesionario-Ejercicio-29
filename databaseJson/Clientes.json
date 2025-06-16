@@ -1,6 +1,34 @@
 [
   {
-    "nombre": "Gary",
+    "nombre": "Kevin Gómez",
+    "cedula": "1001973042",
+    "departamento": "Bolivar",
+    "ciudad": "Cartagena",
+    "direccion": "libertador",
+    "telefono": "3215970852",
+    "correo": "kevingomez@gmail.com",
+    "contactoInicial": true,
+    "referidoPor": "gary",
+    "referidoTel": "3022979717",
+    "nivelSatisfaccion": 4,
+    "vehiculosComprados": []
+  },
+  {
+    "nombre": "Yury Tovar",
+    "cedula": "45549964",
+    "departamento": "Bolivar",
+    "ciudad": "Cartagena",
+    "direccion": "Ipanema",
+    "telefono": "3043029876",
+    "correo": "cami041002@hotmail.es",
+    "contactoInicial": true,
+    "referidoPor": "",
+    "referidoTel": "",
+    "nivelSatisfaccion": 4,
+    "vehiculosComprados": []
+  },
+  {
+    "nombre": "Gary Castaño",
     "cedula": "73198988",
     "departamento": "Bolivar",
     "ciudad": "Cartagena",
@@ -10,21 +38,7 @@
     "contactoInicial": true,
     "referidoPor": "Kevin",
     "referidoTel": "3215970852",
-    "nivelSatisfaccion": 5,
-    "vehiculosComprados": []
-  },
-  {
-    "nombre": "Kevin Gómez",
-    "cedula": "1001973042",
-    "departamento": "Bolivar",
-    "ciudad": "Cartagena",
-    "direccion": "Ipanema",
-    "telefono": "3022979717",
-    "correo": "gjcm@hotmail.es",
-    "contactoInicial": true,
-    "referidoPor": "Kevin",
-    "referidoTel": "3215970852",
-    "nivelSatisfaccion": 5,
+    "nivelSatisfaccion": 2,
     "vehiculosComprados": []
   }
 ]
