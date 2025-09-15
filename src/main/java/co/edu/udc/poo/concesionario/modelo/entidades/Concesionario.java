@@ -99,6 +99,9 @@ public class Concesionario {
                 for(Oficina oficina: oficinas){
                     if(oficina.nif.equals(nif)){
                         oficina.VehiculosDisponiblesInSitu.add(vehiculo);
+                    }else{
+                        System.out.println("NIF de oficina no encontrado!");
+                        throw new IllegalArgumentException("NIF de oficina no encontrado!");
                     }
                 }
                 break;
@@ -106,6 +109,9 @@ public class Concesionario {
                 for(ServicioOficial servicioOficial: serviciosOficiales){
                     if(servicioOficial.nif.equals(nif)){
                         servicioOficial.VehiculosDisponiblesInSitu.add(vehiculo);
+                    }else{
+                        System.out.println("NIF de servicio oficial no encontrado!");
+                        throw new IllegalArgumentException("NIF de servicio oficial no encontrado!");
                     }
                 }
             break;
