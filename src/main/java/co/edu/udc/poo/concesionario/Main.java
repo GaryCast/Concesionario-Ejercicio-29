@@ -4,7 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import co.edu.udc.poo.concesionario.modelo.entidades.*;
+import co.edu.udc.poo.concesionario.enums.TipoCarroceria;
+import co.edu.udc.poo.concesionario.enums.Caracteristicas;
+import co.edu.udc.poo.concesionario.enums.ListaMarcas;
+import co.edu.udc.poo.concesionario.enums.TipoModelo;
+import co.edu.udc.poo.concesionario.model.Carroceria;
+import co.edu.udc.poo.concesionario.model.Marca;
+import co.edu.udc.poo.concesionario.model.Modelo;
+import co.edu.udc.poo.concesionario.model.Vehiculo;
 import co.edu.udc.poo.concesionario.vistas.gui.VentanaInicio;
 
 import javax.swing.*;

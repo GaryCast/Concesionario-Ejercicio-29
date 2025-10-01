@@ -1,9 +1,10 @@
 package co.edu.udc.poo.concesionario.vistas.gui;
 
-import co.edu.udc.poo.concesionario.modelo.crud.MarcaCRUD;
-import co.edu.udc.poo.concesionario.modelo.crud.VehiculoCRUD;
-import co.edu.udc.poo.concesionario.modelo.crud.VentasCRUD;
-import co.edu.udc.poo.concesionario.modelo.entidades.*;
+import co.edu.udc.poo.concesionario.crud.MarcaCRUD;
+import co.edu.udc.poo.concesionario.crud.VehiculoCRUD;
+import co.edu.udc.poo.concesionario.crud.VentasCRUD;
+import co.edu.udc.poo.concesionario.model.Marca;
+import co.edu.udc.poo.concesionario.model.Vehiculo;
 
 import javax.swing.*;
 import java.awt.*;

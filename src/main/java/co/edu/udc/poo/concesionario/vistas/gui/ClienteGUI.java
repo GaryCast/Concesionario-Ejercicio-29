@@ -1,13 +1,12 @@
 package co.edu.udc.poo.concesionario.vistas.gui;
 
-import co.edu.udc.poo.concesionario.modelo.crud.ClienteCRUD;
-import co.edu.udc.poo.concesionario.modelo.entidades.Cliente;
-import co.edu.udc.poo.concesionario.modelo.entidades.Satisfaccion;
+import co.edu.udc.poo.concesionario.crud.ClienteCRUD;
+import co.edu.udc.poo.concesionario.model.Cliente;
+import co.edu.udc.poo.concesionario.enums.Satisfaccion;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 /**
@@ -227,10 +226,10 @@ public class ClienteGUI extends PlantillaCRUD {
             panelFormulario.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
             
             // Campos del formulario
-            JTextField campoNombre = new JTextField(cliente.nombre);
-            JTextField campoCedula = new JTextField(cliente.cedula);
+            JTextField campoNombre = new JTextField(cliente.getNombre());
+            JTextField campoCedula = new JTextField(cliente.getCedula());
             campoCedula.setEditable(false); // No permitir cambiar la cédula
-            JTextField campoDepartamento = new JTextField(cliente.departamento);
+            JTextField campoDepartamento = new JTextField(cliente.departamento());
             JTextField campoCiudad = new JTextField(cliente.ciudad);
             JTextField campoDireccion = new JTextField(cliente.direccion);
             JTextField campoTelefono = new JTextField(cliente.telefono);

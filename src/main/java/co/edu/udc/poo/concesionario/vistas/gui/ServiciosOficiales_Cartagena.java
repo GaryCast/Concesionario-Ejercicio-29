@@ -1,6 +1,6 @@
 package co.edu.udc.poo.concesionario.vistas.gui;
 
-import co.edu.udc.poo.concesionario.modelo.crud.ServicioOficialCRUD;
+import co.edu.udc.poo.concesionario.crud.ServicioOficialCRUD;
 
 import javax.swing.*;
 import java.awt.*;

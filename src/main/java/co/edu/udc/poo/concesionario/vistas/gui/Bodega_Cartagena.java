@@ -1,9 +1,8 @@
 package co.edu.udc.poo.concesionario.vistas.gui;
 
-import co.edu.udc.poo.concesionario.modelo.crud.VehiculoCRUD;
-import co.edu.udc.poo.concesionario.modelo.entidades.Vehiculo;
+import co.edu.udc.poo.concesionario.crud.VehiculoCRUD;
+import co.edu.udc.poo.concesionario.model.Vehiculo;
 import javax.swing.*;
-import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;

@@ -1,11 +1,9 @@
 package co.edu.udc.poo.concesionario.vistas.gui;
 
-import co.edu.udc.poo.concesionario.modelo.crud.OficinaCRUD;
+import co.edu.udc.poo.concesionario.crud.OficinaCRUD;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 public class Oficinas_Cartagena extends JFrame {
 
