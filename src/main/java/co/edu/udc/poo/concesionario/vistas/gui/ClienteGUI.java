@@ -1,8 +1,8 @@
 package co.edu.udc.poo.concesionario.vistas.gui;
 
 import co.edu.udc.poo.concesionario.crud.ClienteCRUD;
-import co.edu.udc.poo.concesionario.model.Cliente;
-import co.edu.udc.poo.concesionario.enums.Satisfaccion;
+import co.edu.udc.poo.concesionario.domain.model.Cliente;
+import co.edu.udc.poo.concesionario.domain.enums.Satisfaccion;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;

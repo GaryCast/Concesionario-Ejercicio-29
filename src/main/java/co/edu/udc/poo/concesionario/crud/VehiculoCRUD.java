@@ -1,11 +1,11 @@
 package co.edu.udc.poo.concesionario.crud;
 
-import co.edu.udc.poo.concesionario.enums.TipoCarroceria;
-import co.edu.udc.poo.concesionario.enums.Caracteristicas;
-import co.edu.udc.poo.concesionario.model.Carroceria;
-import co.edu.udc.poo.concesionario.model.Marca;
-import co.edu.udc.poo.concesionario.model.Modelo;
-import co.edu.udc.poo.concesionario.model.Vehiculo;
+import co.edu.udc.poo.concesionario.domain.enums.TipoCarroceria;
+import co.edu.udc.poo.concesionario.domain.enums.Caracteristicas;
+import co.edu.udc.poo.concesionario.domain.model.Carroceria;
+import co.edu.udc.poo.concesionario.domain.model.Marca;
+import co.edu.udc.poo.concesionario.domain.model.Modelo;
+import co.edu.udc.poo.concesionario.domain.model.Vehiculo;
 import co.edu.udc.poo.concesionario.util.Datos;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

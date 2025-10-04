@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import co.edu.udc.poo.concesionario.enums.TipoCarroceria;
-import co.edu.udc.poo.concesionario.enums.Caracteristicas;
-import co.edu.udc.poo.concesionario.enums.ListaMarcas;
-import co.edu.udc.poo.concesionario.enums.TipoModelo;
-import co.edu.udc.poo.concesionario.model.Carroceria;
-import co.edu.udc.poo.concesionario.model.Marca;
-import co.edu.udc.poo.concesionario.model.Modelo;
-import co.edu.udc.poo.concesionario.model.Vehiculo;
+import co.edu.udc.poo.concesionario.domain.enums.TipoCarroceria;
+import co.edu.udc.poo.concesionario.domain.enums.Caracteristicas;
+import co.edu.udc.poo.concesionario.domain.enums.ListaMarcas;
+import co.edu.udc.poo.concesionario.domain.enums.TipoModelo;
+import co.edu.udc.poo.concesionario.domain.model.Carroceria;
+import co.edu.udc.poo.concesionario.domain.model.Marca;
+import co.edu.udc.poo.concesionario.domain.model.Modelo;
+import co.edu.udc.poo.concesionario.domain.model.Vehiculo;
 import co.edu.udc.poo.concesionario.vistas.gui.VentanaInicio;
 
 import javax.swing.*;

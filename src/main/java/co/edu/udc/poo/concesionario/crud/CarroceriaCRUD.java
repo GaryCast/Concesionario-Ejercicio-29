@@ -1,6 +1,6 @@
 package co.edu.udc.poo.concesionario.crud;
 
-import co.edu.udc.poo.concesionario.model.Carroceria;
+import co.edu.udc.poo.concesionario.domain.model.Carroceria;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -8,9 +8,9 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import co.edu.udc.poo.concesionario.model.Modelo;
-import co.edu.udc.poo.concesionario.enums.TipoCarroceria;
-import co.edu.udc.poo.concesionario.enums.TipoModelo;
+import co.edu.udc.poo.concesionario.domain.model.Modelo;
+import co.edu.udc.poo.concesionario.domain.enums.TipoCarroceria;
+import co.edu.udc.poo.concesionario.domain.enums.TipoModelo;
 import co.edu.udc.poo.concesionario.util.Datos;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

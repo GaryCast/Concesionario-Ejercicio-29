@@ -6,7 +6,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import co.edu.udc.poo.concesionario.model.Bodega;
+import co.edu.udc.poo.concesionario.domain.model.Bodega;
 import co.edu.udc.poo.concesionario.util.Datos;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

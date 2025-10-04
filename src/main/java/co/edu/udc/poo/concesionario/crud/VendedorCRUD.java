@@ -1,7 +1,7 @@
 package co.edu.udc.poo.concesionario.crud;
 
 
-import co.edu.udc.poo.concesionario.model.Vendedor;
+import co.edu.udc.poo.concesionario.domain.model.Vendedor;
 import co.edu.udc.poo.concesionario.util.Datos;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

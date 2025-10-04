@@ -1,8 +1,8 @@
 package co.edu.udc.poo.concesionario.crud;
 
-import co.edu.udc.poo.concesionario.model.*;
+import co.edu.udc.poo.concesionario.domain.model.*;
 import co.edu.udc.poo.concesionario.util.Datos;
-import co.edu.udc.poo.concesionario.valueobjects.MetodoPago;
+import co.edu.udc.poo.concesionario.domain.valueobjects.MetodoPago;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
